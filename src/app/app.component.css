@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "NetflixSans";
+  src: url("../assets/fonts/NetflixSans-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+div {
+  font-family: "NetflixSans", sans-serif;
+}
