@@ -1,6 +1,8 @@
 .footer {
   display: flex;
   justify-content: center;
+  background-color: #0f0f0f;
+  color: #9c9c9c;
 }
 
 .footer-content {
@@ -18,6 +20,10 @@
   margin-left: 40px;
 }
 
+.footer > div:first-child h3 span {
+  text-decoration: underline;
+}
+
 .columns {
   display: flex;
 }
@@ -32,6 +38,31 @@
   list-style: none;
 }
 
+.columns ul li {
+  padding: 7px 0;
+  color: #9c9c9c;
+}
+
+.columns ul a {
+  color: #9c9c9c;
+}
+
 .footer-content > div:last-child > div:first-child {
   margin-left: 40px;
+  width: 20%;
+}
+
+.div-select {
+  margin-bottom: 40px;
+}
+
+select {
+  width: 55%;
+  padding: 5px 8px;
+  background: linear-gradient(to bottom, #141212, #181415);
+  color: #fff;
+  border: 1.5px solid gray;
+  border-radius: 16px;
+  font-size: 1em;
+  font-weight: bold;
 }
