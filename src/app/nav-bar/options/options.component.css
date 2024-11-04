@@ -3,3 +3,33 @@
   flex-direction: row;
   justify-content: space-around;
 }
+
+.options-comp-div > button {
+  border-radius: 16px;
+  border: none;
+}
+
+.options-comp-div > select:first-child {
+  width: 55%;
+  padding: 5px 8px;
+  background: linear-gradient(to bottom, #141212, #181415);
+  color: #fff;
+  border: 1.5px solid gray;
+  border-radius: 16px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.options-comp-div > button:last-child {
+  width: 30%;
+  background-color: #fff;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+  padding: 7px 8px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.options-comp-div > button:last-child:hover {
+  background-color: #b8b6b7;
+}
