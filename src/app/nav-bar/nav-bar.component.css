@@ -1,0 +1,28 @@
+.nav-bar {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.div-logo {
+  border: 1px solid green;
+  width: 40%;
+  display: flex;
+}
+
+.div-logo img {
+  margin: 0 auto;
+  width: 40%;
+}
+
+.options {
+  width: 20%;
+  border: 1px solid blue;
+  display: flex;
+  align-items: center;
+}
+
+app-options {
+  width: 100%;
+}
