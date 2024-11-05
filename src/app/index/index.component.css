@@ -52,21 +52,56 @@
   justify-content: flex-end;
 }
 
+.divs-flow {
+  display: flex;
+  flex-direction: row;
+}
+
+.divs-flow .left-caroseul {
+  margin-left: 20px;
+}
+
+.divs-flow .right-caroseul {
+  margin-right: 20px;
+}
+
+.divs-flow button {
+  position: relative;
+  bottom: 20%;
+  border: none;
+  height: 80px;
+  width: 25px;
+  border-radius: 18px;
+  background-color: #353534;
+  color: #fff;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divs-flow button:hover {
+  background-color: #1a1a1a;
+}
+
 .caroseul-text {
   margin-bottom: 50px;
-  margin-left: 100px;
+  margin-left: 60px;
 }
 
 .caroseul-text h1 {
+  margin: 0;
   font-size: 4em;
   font-family: "NetflixSans", sans-serif;
   font-weight: bold;
-  width: 55%;
+  width: 65%;
   color: #fff;
   z-index: 1;
 }
 
 .caroseul-text p {
+  margin: 20px 0;
   color: #b9b7b7;
   font-size: 1.5em;
 }
