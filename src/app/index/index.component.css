@@ -134,3 +134,38 @@
 .bottom-caroseul button:first-of-type {
   margin-left: 20px;
 }
+
+.login-top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.login-top-section input[type="text"] {
+  border: 1px solid #6b6b71;
+  width: 350px;
+  height: 55px;
+  margin-right: 10px;
+  border-radius: 60px;
+  background-color: #201c1f;
+  padding-left: 10px;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.login-top-section input[type="text"]::placeholder {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.login-top-section button {
+  background-color: #e50914;
+  border: none;
+  border-radius: 60px;
+  color: #fff;
+  font-size: 1.6em;
+  padding: 15px 30px;
+  margin-right: 10px;
+  font-weight: bold;
+}
