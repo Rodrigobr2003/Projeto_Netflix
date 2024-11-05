@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import {
+  faAngleLeft,
+  faAngleRight,
+  faPlay,
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-index',
@@ -9,4 +13,5 @@ import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 export class IndexComponent {
   arrowLeft = faAngleLeft;
   arrowRight = faAngleRight;
+  playBtn = faPlay;
 }

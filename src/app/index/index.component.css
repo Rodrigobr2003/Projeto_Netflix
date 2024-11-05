@@ -105,3 +105,32 @@
   color: #b9b7b7;
   font-size: 1.5em;
 }
+
+.bottom-caroseul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.bottom-caroseul fa-icon {
+  color: #fff;
+}
+
+.bottom-caroseul button {
+  background-color: #808080;
+  width: 70px;
+  height: 4px;
+  border-radius: 10px;
+  border: none;
+  margin: 0 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.bottom-caroseul button:hover {
+  background-color: #d6d6d6;
+}
+
+.bottom-caroseul button:first-of-type {
+  margin-left: 20px;
+}
