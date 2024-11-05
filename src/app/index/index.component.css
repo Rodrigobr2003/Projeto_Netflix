@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "NetflixSans";
+  src: url("../../assets/fonts/NetflixSans-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.index-content {
+  margin-bottom: 100px;
+}
+
+.img-class {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.caroseul {
+  border: 2px solid #fff;
+  border-radius: 18px;
+  width: 95%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.linear-gradient {
+  height: 100%;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.4)
+    ),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(../../assets/images/imgFundo1.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.caroseul-text {
+  margin-bottom: 50px;
+  margin-left: 100px;
+}
+
+.caroseul-text h1 {
+  font-size: 4em;
+  font-family: "NetflixSans", sans-serif;
+  font-weight: bold;
+  width: 55%;
+  color: #fff;
+  z-index: 1;
+}
+
+.caroseul-text p {
+  color: #b9b7b7;
+  font-size: 1.5em;
+}
