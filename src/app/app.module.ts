@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { OptionsComponent } from './nav-bar/options/options.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IndexComponent } from './index/index.component';
+import { CaroseulComponent } from './index/caroseul/caroseul.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { IndexComponent } from './index/index.component';
     FooterComponent,
     OptionsComponent,
     IndexComponent,
+    CaroseulComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [provideClientHydration()],

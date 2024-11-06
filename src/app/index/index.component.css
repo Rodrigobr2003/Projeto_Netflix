@@ -242,3 +242,16 @@
 .prices:hover button {
   border: 2px solid #d6d6d6;
 }
+
+.caroseuls {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.position-caroseuls {
+  width: 80%;
+  padding: 20px 70px;
+  color: #fff;
+  font-size: 1.2em;
+}
