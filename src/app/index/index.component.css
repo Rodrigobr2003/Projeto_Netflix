@@ -255,3 +255,30 @@
   color: #fff;
   font-size: 1.2em;
 }
+
+.reasons-watch {
+  width: 80%;
+  padding: 20px 70px;
+  color: #fff;
+  font-size: 1.2em;
+  margin: 0 auto;
+}
+
+.reasons-flow {
+  display: flex;
+  font-size: 0.8em;
+}
+
+.reason-card {
+  margin: 0 8px;
+  padding: 0 20px;
+  background-color: #272727;
+  border-radius: 18px;
+  width: 30%;
+  border: 2px solid #303030;
+}
+
+.reason-card svg {
+  width: 25%;
+  float: right;
+}
