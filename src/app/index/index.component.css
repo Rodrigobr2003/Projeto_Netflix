@@ -6,7 +6,7 @@
 }
 
 .index-content {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 .img-class {
@@ -281,4 +281,58 @@
 .reason-card svg {
   width: 25%;
   float: right;
+}
+
+.frequently-questions {
+  width: 80%;
+  padding: 20px 70px;
+  color: #fff;
+  font-size: 1.2em;
+  margin: 0 auto;
+}
+
+.questions {
+  font-size: 0.8em;
+  border-radius: 18px;
+  border: 2px solid #303030;
+  background-color: #272727;
+  color: #fdfdfd;
+  padding: 5px 20px;
+  margin: 10px 0;
+  transition: background-color 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.questions:hover {
+  background-color: #3f3f3f;
+}
+
+.questions fa-icon {
+  font-size: 2em;
+  margin-left: auto;
+}
+
+.flow-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.flow-btn button {
+  background-color: #e50914;
+  border: none;
+  border-radius: 60px;
+  color: #fff;
+  font-size: 0.9em;
+  padding: 10px 30px;
+  margin-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.flow-btn button:hover {
+  background-color: #c11119;
 }

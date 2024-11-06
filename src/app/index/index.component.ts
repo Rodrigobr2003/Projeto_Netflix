@@ -3,6 +3,7 @@ import {
   faAngleLeft,
   faAngleRight,
   faPlay,
+  faPlus,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -14,4 +15,5 @@ export class IndexComponent {
   arrowLeft = faAngleLeft;
   arrowRight = faAngleRight;
   playBtn = faPlay;
+  plus = faPlus;
 }
