@@ -1,0 +1,72 @@
+.home-flow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.section-top {
+  width: 100%;
+}
+
+.video-div {
+  width: 100%;
+}
+
+.video-div img {
+  width: 35%;
+}
+
+.left-side {
+  color: #fff;
+  margin-left: 80px;
+}
+
+.left-side div {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-side h3 {
+  font-size: 1.4em;
+}
+
+.left-side p {
+  width: 35%;
+}
+
+.left-side button {
+  margin: 0 5px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.left-side button:first-of-type {
+  background-color: #fff;
+  padding: 5px 30px;
+}
+
+.left-side button:last-of-type {
+  color: #fff;
+  background-color: rgba(97, 99, 97, 0.7);
+  padding: 5px 40px;
+}
+
+.left-side button:last-of-type:hover {
+  background-color: rgba(46, 52, 45, 0.7);
+}
+
+.left-side button:first-of-type:hover {
+  background-color: rgba(193, 197, 196, 0.7);
+}
+
+.left-side button fa-icon {
+  font-size: 1.6em;
+  margin-right: 15px;
+}
