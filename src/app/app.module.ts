@@ -13,6 +13,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IndexComponent } from './index/index.component';
 import { CaroseulComponent } from './index/caroseul/caroseul.component';
 import { HomeComponent } from './home/home.component';
+import { OptionsProfileComponent } from './nav-bar/options-profile/options-profile.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HomeComponent } from './home/home.component';
     IndexComponent,
     CaroseulComponent,
     HomeComponent,
+    OptionsProfileComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [provideClientHydration()],
