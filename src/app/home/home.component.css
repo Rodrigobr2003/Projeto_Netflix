@@ -1,6 +1,8 @@
 .home-flow {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -69,4 +71,27 @@
 .left-side button fa-icon {
   font-size: 1.6em;
   margin-right: 15px;
+}
+
+.section-mid {
+  width: 90%;
+}
+
+.section-mid h2 {
+  font-size: 1.2em;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.top-br {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-mid .num svg {
+  width: 35%;
+}
+
+.section-mid .num img {
+  width: 57%;
 }
