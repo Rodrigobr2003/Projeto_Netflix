@@ -1,0 +1,41 @@
+.opt-profile {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+
+.navigate {
+  width: 80%;
+}
+
+.navigate ul {
+  display: flex;
+  list-style: none;
+}
+
+.navigate ul li {
+  margin: 0 10px;
+  font-size: 0.9em;
+}
+
+.navigate a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+
+.actions * {
+  margin: 0 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.actions img {
+  width: 15%;
+  border-radius: 6px;
+}
