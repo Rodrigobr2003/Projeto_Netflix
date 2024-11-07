@@ -14,6 +14,7 @@ import { IndexComponent } from './index/index.component';
 import { CaroseulComponent } from './index/caroseul/caroseul.component';
 import { HomeComponent } from './home/home.component';
 import { OptionsProfileComponent } from './nav-bar/options-profile/options-profile.component';
+import { MovieOptionsComponent } from './home/movie-options/movie-options.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { OptionsProfileComponent } from './nav-bar/options-profile/options-profi
     CaroseulComponent,
     HomeComponent,
     OptionsProfileComponent,
+    MovieOptionsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [provideClientHydration()],
