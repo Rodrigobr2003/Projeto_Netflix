@@ -4,6 +4,7 @@
   </div>
 
   <div class="options">
-    <app-options></app-options>
+    <app-options *ngIf="!showOptions"></app-options>
+    <app-options-profile *ngIf="!showProfileOptions"></app-options-profile>
   </div>
 </div>
