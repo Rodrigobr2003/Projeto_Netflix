@@ -1,5 +1,6 @@
-import { Component, inject, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, inject, OnChanges, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-nav-bar',
@@ -16,6 +17,16 @@ export class NavBarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.verifyOptions();
+
+    this.actvRoute.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe(() => {
+        this.verifyOptions();
+      });
+  }
+
+  verifyOptions() {
     if (this.actvRoute.url.includes('/home')) {
       this.showOptions = false;
       this.showProfileOptions = true;

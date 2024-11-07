@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { faLanguage } from '@fortawesome/free-solid-svg-icons';
+import { NavBarComponent } from '../nav-bar.component';
 
 @Component({
   selector: 'app-options',
@@ -10,9 +11,11 @@ import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 export class OptionsComponent {
   faLanguage = faLanguage;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private verifyOpts: NavBarComponent) {}
 
-  navigateHome() {
-    this.router.navigate(['/home']);
+  async navigateHome() {
+    await this.router.navigate(['/home']);
+
+    this.verifyOpts.verifyOptions();
   }
 }
