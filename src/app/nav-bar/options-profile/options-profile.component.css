@@ -1,11 +1,11 @@
 .opt-profile {
   color: #fff;
-  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
 }
 
 .navigate {
-  display: flex;
-  flex-direction: row;
+  width: 80%;
 }
 
 .navigate ul {
@@ -26,6 +26,7 @@
 .actions {
   display: flex;
   align-items: center;
+  width: 20%;
 }
 
 .actions * {
@@ -35,6 +36,6 @@
 }
 
 .actions img {
-  width: 7%;
+  width: 15%;
   border-radius: 6px;
 }
