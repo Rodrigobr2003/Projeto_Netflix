@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -8,4 +9,10 @@ import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 })
 export class OptionsComponent {
   faLanguage = faLanguage;
+
+  constructor(private router: Router) {}
+
+  navigateHome() {
+    this.router.navigate(['/home']);
+  }
 }

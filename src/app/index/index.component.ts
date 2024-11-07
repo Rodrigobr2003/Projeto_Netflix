@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import {
   faAngleLeft,
   faAngleRight,
@@ -16,4 +17,10 @@ export class IndexComponent {
   arrowRight = faAngleRight;
   playBtn = faPlay;
   plus = faPlus;
+
+  constructor(private router: Router) {}
+
+  navigateHome() {
+    this.router.navigate(['/home']);
+  }
 }
