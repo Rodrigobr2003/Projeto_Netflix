@@ -9,8 +9,3 @@ div {
   font-family: "NetflixSans", sans-serif;
   height: 100%;
 }
-
-app-nav-bar {
-  position: fixed;
-  z-index: 3;
-}

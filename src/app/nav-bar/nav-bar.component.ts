@@ -1,4 +1,10 @@
-import { Component, inject, OnChanges, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  inject,
+  OnChanges,
+  OnInit,
+} from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
 
@@ -9,6 +15,7 @@ import { filter } from 'rxjs';
 })
 export class NavBarComponent implements OnInit {
   actvRoute: Router;
+  appNavBar: any;
   showOptions: boolean = false;
   showProfileOptions: boolean = false;
 
@@ -17,13 +24,18 @@ export class NavBarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.verifyOptions();
+    if (typeof document !== 'undefined') {
+      this.appNavBar = document.querySelector('.nav-bar');
 
-    this.actvRoute.events
-      .pipe(filter((event) => event instanceof NavigationEnd))
-      .subscribe(() => {
-        this.verifyOptions();
-      });
+      this.verifyOptions();
+
+      this.actvRoute.events
+        .pipe(filter((event) => event instanceof NavigationEnd))
+        .subscribe(() => {
+          this.verifyOptions();
+          this.verifyNavBar();
+        });
+    }
   }
 
   verifyOptions() {
@@ -33,6 +45,14 @@ export class NavBarComponent implements OnInit {
     } else {
       this.showOptions = true;
       this.showProfileOptions = false;
+    }
+  }
+
+  verifyNavBar() {
+    if (this.actvRoute.url.includes('/home')) {
+      this.appNavBar.style.position = 'fixed';
+    } else {
+      this.appNavBar.style.position = 'relative';
     }
   }
 }
