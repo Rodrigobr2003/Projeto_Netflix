@@ -16,7 +16,6 @@
 }
 
 .caroseul {
-  border: 2px solid #fff;
   border-radius: 18px;
   width: 95%;
   height: 600px;
@@ -62,6 +61,7 @@
 }
 
 .divs-flow .right-caroseul {
+  margin-left: auto;
   margin-right: 20px;
 }
 
@@ -192,7 +192,6 @@
 }
 
 .prices {
-  border: 2px solid #484241;
   background-color: rgba(92, 85, 87, 0.5);
   width: 80%;
   border-radius: 18px;
@@ -240,7 +239,6 @@
 }
 
 .prices:hover button {
-  border: 2px solid #d6d6d6;
 }
 
 .caroseuls {
@@ -275,7 +273,10 @@
   background-color: #272727;
   border-radius: 18px;
   width: 30%;
-  border: 2px solid #303030;
+}
+
+.reason-card h3 {
+  margin-bottom: 0;
 }
 
 .reason-card svg {
@@ -294,7 +295,6 @@
 .questions {
   font-size: 0.8em;
   border-radius: 18px;
-  border: 2px solid #303030;
   background-color: #272727;
   color: #fdfdfd;
   padding: 5px 20px;
@@ -335,4 +335,266 @@
 
 .flow-btn button:hover {
   background-color: #c11119;
+}
+
+@media only screen and (max-width: 480px) {
+  .caroseul {
+    height: 250px;
+  }
+
+  .divs-flow button {
+    bottom: 5%;
+    height: 60px;
+    width: 15px;
+    font-size: 1em;
+  }
+
+  .caroseul-text {
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
+
+  .caroseul-text h1 {
+    font-size: 1.2em;
+    width: 85%;
+  }
+
+  .caroseul-text p {
+    font-size: 0.7em;
+    width: 70%;
+  }
+
+  .bottom-caroseul button {
+    width: 40px;
+  }
+
+  .login-top-section input[type="text"] {
+    width: 180px;
+    height: 40px;
+  }
+
+  .login-top-section button {
+    font-size: 1em;
+    padding: 13px 20px;
+  }
+
+  .prices {
+    width: 80%;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prices h3 {
+    font-size: 1em;
+  }
+
+  .prices p {
+    font-size: 0.8em;
+  }
+
+  .prices button {
+    width: 35%;
+    height: 35px;
+    font-size: 0.9em;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .position-caroseuls {
+    width: 90%;
+    padding: 20px 30px;
+  }
+
+  .reasons-watch {
+    width: 90%;
+    padding: 20px 30px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .reasons-flow {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reason-card {
+    margin: 10px 0;
+    padding: 0 20px;
+    width: 80%;
+  }
+
+  .reason-card h3 {
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+
+  .frequently-questions {
+    width: 80%;
+    padding: 20px 30px;
+    margin-right: 0px;
+  }
+
+  .questions {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .caroseul {
+    height: 300px;
+  }
+
+  .divs-flow button {
+    bottom: 15%;
+    height: 60px;
+    width: 15px;
+    font-size: 1em;
+  }
+
+  .caroseul-text {
+    margin-left: 15px;
+    margin-bottom: 30px;
+  }
+
+  .caroseul-text h1 {
+    font-size: 1.8em;
+    width: 85%;
+  }
+
+  .caroseul-text p {
+    font-size: 0.8em;
+  }
+
+  .bottom-caroseul button {
+    width: 50px;
+  }
+
+  .login-top-section input[type="text"] {
+    width: 300px;
+    height: 40px;
+  }
+
+  .login-top-section button {
+    font-size: 1.3em;
+    padding: 10px 30px;
+    margin: 0px;
+  }
+
+  .prices {
+    width: 80%;
+    padding: 20px 30px;
+  }
+
+  .prices h3 {
+    font-size: 1em;
+    width: 80%;
+  }
+
+  .prices p {
+    font-size: 0.8em;
+    width: 80%;
+  }
+
+  .prices button {
+    width: 35%;
+    height: 35px;
+    font-size: 0.9em;
+  }
+
+  .position-caroseuls {
+    width: 90%;
+    padding: 20px 30px;
+  }
+
+  .reasons-watch {
+    width: 90%;
+    padding: 20px 30px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .reasons-flow {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reason-card {
+    margin: 10px 0;
+    padding: 0 20px;
+    width: 80%;
+  }
+
+  .reason-card h3 {
+    margin-bottom: 10px;
+  }
+
+  .frequently-questions {
+    width: 90%;
+    padding: 20px 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .questions-flow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .questions {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .caroseul {
+    height: 400px;
+  }
+
+  .divs-flow button {
+    top: 5%;
+  }
+
+  .caroseul-text h1 {
+    font-size: 2.5em;
+  }
+
+  .caroseul-text p {
+    font-size: 1em;
+  }
+
+  .prices {
+    width: 80%;
+    padding: 20px 30px;
+  }
+
+  .prices h3 {
+    font-size: 1em;
+  }
+
+  .prices p {
+    font-size: 0.8em;
+  }
+
+  .prices button {
+    width: 20%;
+    height: 35px;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .divs-flow button {
+    top: 10%;
+  }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+}
+
+@media only screen and (min-width: 1921px) {
 }
