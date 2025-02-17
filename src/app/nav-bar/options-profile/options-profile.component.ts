@@ -3,6 +3,7 @@ import {
   faMagnifyingGlass,
   faBell,
   faCaretDown,
+  faBars,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -14,4 +15,10 @@ export class OptionsProfileComponent {
   magnifyingGlass = faMagnifyingGlass;
   bell = faBell;
   caretDown = faCaretDown;
+  bars = faBars;
+  isMobileMenuOpen = false;
+
+  toggleMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
 }

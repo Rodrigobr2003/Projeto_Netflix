@@ -2,6 +2,17 @@
   color: #fff;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Hamburger menu - hidden by default */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  margin-right: 15px;
+  align-items: flex-end;
 }
 
 .navigate {
@@ -11,11 +22,15 @@
 .navigate ul {
   display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
 }
 
 .navigate ul li {
   margin: 0 10px;
   font-size: 0.9em;
+  padding: 8px 0;
 }
 
 .navigate a {
@@ -26,6 +41,7 @@
 .actions {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   width: 20%;
 }
 
@@ -36,6 +52,139 @@
 }
 
 .actions img {
-  width: 15%;
+  width: 32px;
+  height: 32px;
   border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+  .navigate {
+    width: 75%;
+  }
+  
+  .actions {
+    width: 25%;
+  }
+  
+  .navigate ul li {
+    font-size: 0.85em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .opt-profile {
+    padding: 0 10px;
+  }
+
+  .navigate {
+    width: 70%;
+  }
+  
+  .actions {
+    width: 30%;
+  }
+  
+  .navigate ul li {
+    margin: 0 8px;
+    font-size: 0.8em;
+  }
+  
+  .actions * {
+    margin: 0 8px;
+    font-size: 1.3em;
+  }
+  
+  .actions img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .opt-profile {
+    padding: 0 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+  }
+
+  /* Show hamburger menu */
+  .hamburger-menu {
+    display: block;
+    width: 10%;
+  }
+
+  /* Hide regular navigation */
+  .navigate {
+    display: none;
+  }
+  
+  .actions {
+    width: 90%;
+    justify-content: flex-end;
+  }
+  
+  .actions * {
+    margin: 0 5px;
+    font-size: 1.2em;
+  }
+  
+  .actions img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Mobile Navigation Menu Styles */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 70%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.mobile-nav.active {
+  left: 0;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.mobile-nav ul li {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  display: block;
+}
+
+/* Overlay when mobile menu is open */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.overlay.active {
+  display: block;
 }

@@ -18,7 +18,8 @@
 
 .video-div {
   width: 100%;
-  height: 750px;
+  height: 100vh;
+  position: relative;
 }
 
 .video-div video {
@@ -33,7 +34,7 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 755px;
+  height: 100vh;
   background: linear-gradient(
     to bottom,
     rgb(0, 0, 0, 0.6),
@@ -131,4 +132,86 @@
 
 .section-mid .num img {
   width: 57%;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+  .left-side {
+    margin-left: 40px;
+  }
+  
+  .left-side p {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left-side {
+    margin-left: 20px;
+    top: 25%;
+  }
+  
+  .left-side p {
+    width: 80%;
+  }
+  
+  .left-side img {
+    width: 60%;
+  }
+  
+  .left-side div {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  
+  .left-side button {
+    margin: 5px 0;
+    width: 200px;
+  }
+  
+  .section-mid {
+    width: 95%;
+  }
+  
+  .top-br {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .section-mid .num {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .left-side {
+    margin-left: 10px;
+    top: 20%;
+  }
+  
+  .left-side h3 {
+    font-size: 1.2em;
+  }
+  
+  .left-side p {
+    width: 90%;
+    font-size: 0.9em;
+  }
+  
+  .left-side img {
+    width: 80%;
+  }
+  
+  .left-side button {
+    width: 180px;
+    font-size: 1em;
+  }
+  
+  .section-mid h2 {
+    font-size: 1.1em;
+  }
+  
+  .section-mid .num {
+    width: 100%;
+  }
 }

@@ -10,6 +10,7 @@
   flex-direction: column;
   align-items: center;
   width: 90%;
+  padding: 20px 0;
 }
 
 .footer-content > div {
@@ -26,10 +27,11 @@
 
 .columns {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .columns div {
-  margin: 30px 40px;
+  margin: 20px 40px;
 }
 
 .columns ul {
@@ -65,4 +67,70 @@ select {
   border-radius: 16px;
   font-size: 1em;
   font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+  .footer-content {
+    width: 95%;
+  }
+
+  .columns div {
+    margin: 20px 30px;
+  }
+
+  .footer-content > div:last-child > div:first-child {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer > div:first-child h3 {
+    margin-left: 20px;
+    font-size: 1.1em;
+  }
+
+  .columns {
+    justify-content: flex-start;
+  }
+
+  .columns div {
+    margin: 15px 20px;
+    width: calc(50% - 40px); /* Two columns on tablet */
+  }
+
+  .footer-content > div:last-child > div:first-child {
+    margin-left: 20px;
+    width: 40%;
+  }
+
+  select {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer > div:first-child h3 {
+    margin-left: 15px;
+    font-size: 1em;
+  }
+
+  .columns div {
+    margin: 10px 15px;
+    width: calc(100% - 30px); /* Single column on mobile */
+  }
+
+  .columns ul li {
+    padding: 5px 0;
+    font-size: 0.9em;
+  }
+
+  .footer-content > div:last-child > div:first-child {
+    margin-left: 15px;
+    width: 60%;
+  }
+
+  select {
+    font-size: 0.9em;
+  }
 }
