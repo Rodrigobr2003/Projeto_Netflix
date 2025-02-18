@@ -126,6 +126,15 @@
 .top-br {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.section-mid .num {
+  display: flex;
+  align-items: center;
+  width: calc(20% - 10px); /* 5 items per row with gap */
 }
 
 .section-mid .num svg {
@@ -144,6 +153,10 @@
 
   .left-side p {
     width: 50%;
+  }
+
+  .section-mid .num {
+    width: calc(25% - 10px); /* 4 items per row */
   }
 }
 
@@ -191,7 +204,7 @@
   }
 
   .section-mid .num {
-    width: 50%;
+    width: calc(33.33% - 10px); /* 3 items per row */
   }
 }
 
@@ -228,6 +241,20 @@
   }
 
   .section-mid .num {
-    width: 100%;
+    width: calc(50% - 10px); /* 2 items per row */
+  }
+
+  .section-mid .num svg {
+    width: 30%;
+  }
+  
+  .section-mid .num img {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .section-mid .num {
+    width: 100%; /* 1 item per row */
   }
 }
