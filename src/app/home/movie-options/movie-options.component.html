@@ -1,7 +1,13 @@
-<div class="options">
-  <img src="../../../assets/images/op1.png" alt="movie" />
-  <img src="../../../assets/images/op2.png" alt="movie" />
-  <img src="../../../assets/images/op3.png" alt="movie" />
-  <img src="../../../assets/images/op4.png" alt="movie" />
-  <img src="../../../assets/images/op5.png" alt="movie" />
+<div class="carousel">
+  <button class="btn prev" (click)="prev()">&#10094;</button>
+  <div class="carousel-container">
+    <div #track class="carousel-track">
+      <img src="../../../assets/images/op1.png" alt="movie">
+      <img src="../../../assets/images/op2.png" alt="movie">
+      <img src="../../../assets/images/op3.png" alt="movie">
+      <img src="../../../assets/images/op4.png" alt="movie">
+      <img src="../../../assets/images/op5.png" alt="movie">
+    </div>
+  </div>
+  <button class="btn next" (click)="next()">&#10095;</button>
 </div>

@@ -3,6 +3,7 @@ import {
   BrowserModule,
   provideClientHydration,
 } from '@angular/platform-browser';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,5 +32,6 @@ import { MovieOptionsComponent } from './home/movie-options/movie-options.compon
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule {}
