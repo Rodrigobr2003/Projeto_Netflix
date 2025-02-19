@@ -257,60 +257,101 @@
 }
 
 .reasons-watch {
-  width: 80%;
-  padding: 20px 70px;
+  width: 70%;
+  max-width: 1200px;
+  padding: 40px 70px;
   color: #fff;
-  font-size: 1.2em;
   margin: 0 auto;
 }
 
 .reasons-flow {
   display: flex;
-  font-size: 0.8em;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .reason-card {
-  margin: 0 8px;
-  padding: 0 20px;
+  flex: 1;
+  min-width: 280px;
+  padding: 25px;
   background-color: #272727;
   border-radius: 18px;
-  width: 30%;
   border: 2px solid #303030;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.reason-card:hover {
+  transform: translateY(-5px);
+  background-color: #303030;
+}
+
+.reason-card h3 {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: #fdfdfd;
+}
+
+.reason-card p {
+  color: #b9b7b7;
+  line-height: 1.5;
+  margin-bottom: 15px;
 }
 
 .reason-card svg {
   width: 25%;
   float: right;
+  margin-left: 15px;
+  margin-bottom: 10px;
 }
 
 .frequently-questions {
-  width: 80%;
-  padding: 20px 70px;
+  width: 90%;
+  max-width: 1200px;
+  padding: 40px 20px;
   color: #fff;
-  font-size: 1.2em;
   margin: 0 auto;
 }
 
+.frequently-questions h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.questions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
 .questions {
-  font-size: 0.8em;
-  border-radius: 18px;
-  border: 2px solid #303030;
+  padding: 20px 30px;
   background-color: #272727;
-  color: #fdfdfd;
-  padding: 5px 20px;
-  margin: 10px 0;
-  transition: background-color 0.2s ease-in-out;
+  border: 2px solid #303030;
+  margin: 20px 0;
+  border-radius: 18px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .questions:hover {
   background-color: #3f3f3f;
 }
 
+.questions h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #fdfdfd;
+}
+
 .questions fa-icon {
-  font-size: 2em;
-  margin-left: auto;
+  font-size: 1.5em;
+  color: #fff;
 }
 
 .flow-btn {
@@ -335,4 +376,319 @@
 
 .flow-btn button:hover {
   background-color: #c11119;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .caroseul {
+    height: 500px;
+  }
+
+  .caroseul-text h1 {
+    font-size: 3.2em;
+    width: 75%;
+  }
+
+  .caroseul-text p {
+    font-size: 1.3em;
+  }
+
+  .prices {
+    width: 85%;
+    padding: 20px 40px;
+  }
+
+  .position-caroseuls {
+    width: 85%;
+    padding: 20px 40px;
+  }
+
+  .reasons-watch {
+    width: 85%;
+    padding: 30px 40px;
+  }
+
+  .reason-card {
+    min-width: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .caroseul {
+    height: 400px;
+    width: 98%;
+  }
+
+  .caroseul-text {
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  .caroseul-text h1 {
+    font-size: 2.5em;
+    width: 85%;
+  }
+
+  .caroseul-text p {
+    font-size: 1.2em;
+  }
+
+  .divs-flow button {
+    height: 60px;
+    width: 20px;
+    font-size: 1.2em;
+  }
+
+  .login-top-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .login-top-section input[type="text"] {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .login-top-section button {
+    font-size: 1.3em;
+    padding: 12px 25px;
+  }
+
+  .prices {
+    width: 90%;
+    padding: 15px 25px;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .prices button {
+    width: 120px;
+    margin: 0;
+  }
+
+  .position-caroseuls {
+    width: 90%;
+    padding: 15px 25px;
+  }
+
+  .reasons-watch {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .reasons-flow {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .reason-card {
+    width: 90%;
+    min-width: unset;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .reason-card h3 {
+    font-size: 1.3em;
+  }
+
+  .reason-card svg {
+    width: 20%;
+  }
+
+  .frequently-questions {
+    width: 95%;
+    padding: 30px 10px;
+  }
+
+  .frequently-questions h1 {
+    font-size: 2em;
+  }
+
+  .questions {
+    padding: 15px 20px;
+  }
+
+  .questions h3 {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .caroseul {
+    height: 300px;
+  }
+
+  .caroseul-text {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .caroseul-text h1 {
+    font-size: 1.5em;
+    width: 90%;
+  }
+
+  .caroseul-text p {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+
+  .divs-flow button {
+    height: 40px;
+    width: 15px;
+    font-size: 1em;
+  }
+
+  .bottom-caroseul button {
+    width: 30px;
+  }
+
+  .login-top-section input[type="text"] {
+    width: 90%;
+    height: 45px;
+    font-size: 1em;
+  }
+
+  .login-top-section button {
+    font-size: 1.1em;
+    padding: 10px 20px;
+  }
+
+  .prices {
+    width: 85%;
+    padding: 12px 15px;
+  }
+
+  .prices h3 {
+    font-size: 1.1em;
+  }
+
+  .prices p {
+    font-size: 0.9em;
+  }
+
+  .position-caroseuls {
+    width: 95%;
+    padding: 12px 15px;
+    font-size: 1em;
+  }
+
+  .reasons-watch {
+    width: 90%;
+    padding: 20px 15px;
+  }
+
+  .reasons-flow {
+    gap: 20px;
+  }
+
+  .reason-card {
+    padding: 15px;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .reason-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .reason-card p {
+    font-size: 0.9em;
+  }
+
+  .reason-card svg {
+    width: 15%;
+  }
+
+  .questions {
+    padding: 12px 15px;
+  }
+
+  .questions h3 {
+    font-size: 1em;
+  }
+
+  .questions fa-icon {
+    font-size: 1.2em;
+  }
+
+  .flow-btn button {
+    font-size: 0.8em;
+    padding: 8px 20px;
+  }
+
+  .frequently-questions {
+    padding: 20px 10px;
+  }
+
+  .frequently-questions h1 {
+    font-size: 1.8em;
+  }
+
+  .questions {
+    padding: 12px 15px;
+  }
+
+  .questions h3 {
+    font-size: 1em;
+  }
+
+  .questions fa-icon {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .caroseul-text h1 {
+    font-size: 1.2em;
+  }
+
+  .caroseul-text p {
+    font-size: 0.8em;
+  }
+
+  .login-top-section input[type="text"] {
+    height: 40px;
+  }
+
+  .login-top-section button {
+    font-size: 1em;
+    padding: 8px 15px;
+  }
+
+  .prices h3 {
+    font-size: 1em;
+  }
+
+  .prices p {
+    font-size: 0.8em;
+  }
+
+  .reason-card {
+    padding: 15px;
+    width: 80%;
+  }
+
+  .reason-card h3 {
+    font-size: 1.1em;
+  }
+
+  .reason-card p {
+    font-size: 0.85em;
+  }
+
+  .frequently-questions h1 {
+    font-size: 1.5em;
+  }
+
+  .questions {
+    padding: 10px 12px;
+  }
+
+  .questions h3 {
+    font-size: 0.9em;
+  }
 }
