@@ -35,3 +35,67 @@
 .options-comp-div > button:last-child:hover {
   background-color: #b8b6b7;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .options-comp-div {
+    width: 35%;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .options-comp-div {
+    width: 50%;
+  }
+
+  .options-comp-div > select:first-child {
+    width: 100%;
+    font-size: 0.9em;
+    padding: 4px 6px;
+  }
+
+  .options-comp-div > button:last-child {
+    width: 55%;
+    font-size: 0.8em;
+    padding: 5px 6px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .options-comp-div {
+    width: 75%;
+    
+  }
+  .options-comp-div > select:first-child {
+    width: 65%;
+    font-size: 0.8em;
+    padding: 3px 5px;
+  }
+
+  .options-comp-div > button:last-child {
+    width: 30%;
+    font-size: 0.75em;
+    padding: 4px 5px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .options-comp-div {
+    width: 90%;
+  }
+
+  .options-comp-div > select:first-child {
+    width: 80%;
+    font-size: 0.75em;
+    padding: 2px 4px;
+  }
+
+  .options-comp-div > button:last-child {
+    width: 55%;
+    font-size: 0.7em;
+    padding: 3px 4px;
+  }
+}
