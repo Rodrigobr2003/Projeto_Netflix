@@ -8,3 +8,32 @@ img {
 img:hover {
   transform: scale(1.05);
 }
+
+/* Add responsive breakpoints */
+@media screen and (max-width: 1200px) {
+  img {
+    width: 23%;  /* 4 items per row */
+    margin: 0 4px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 31%;  /* 3 items per row */
+    margin: 0 3px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  img {
+    width: 48%;  /* 2 items per row */
+    margin: 0 2px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  img {
+    width: 100%;  /* 1 item per row */
+    margin: 5px 0;
+  }
+}
