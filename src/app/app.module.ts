@@ -10,7 +10,6 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { OptionsComponent } from './nav-bar/options/options.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IndexComponent } from './index/index.component';
 import { CaroseulComponent } from './index/caroseul/caroseul.component';
 import { HomeComponent } from './home/home.component';
@@ -29,9 +28,9 @@ import { MovieOptionsComponent } from './home/movie-options/movie-options.compon
     OptionsProfileComponent,
     MovieOptionsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}
