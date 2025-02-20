@@ -1,6 +1,6 @@
 <div class="opt-profile">
   <div class="hamburger-menu" (click)="toggleMobileMenu()">
-    <fa-icon [icon]="bars"></fa-icon>
+    <!-- <fa-icon [icon]="bars"></fa-icon> -->
   </div>
 
   <div class="navigate">
@@ -15,10 +15,10 @@
   </div>
 
   <div class="actions">
-    <fa-icon [icon]="magnifyingGlass"></fa-icon>
-    <fa-icon [icon]="bell"></fa-icon>
+    <!-- <fa-icon [icon]="magnifyingGlass"></fa-icon> -->
+    <!-- <fa-icon [icon]="bell"></fa-icon> -->
     <img src="../../../assets/images/prof-pic.png" alt="profile picture" />
-    <fa-icon [icon]="caretDown"></fa-icon>
+    <!-- <fa-icon [icon]="caretDown"></fa-icon> -->
   </div>
 </div>
 
@@ -32,4 +32,8 @@
     <li><a href="">Navegar por idiomas</a></li>
   </ul>
 </div>
-<div class="overlay" [class.active]="isMobileMenuOpen" (click)="toggleMobileMenu()"></div>
+<div
+  class="overlay"
+  [class.active]="isMobileMenuOpen"
+  (click)="toggleMobileMenu()"
+></div>
