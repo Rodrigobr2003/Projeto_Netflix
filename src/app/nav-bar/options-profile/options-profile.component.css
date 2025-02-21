@@ -4,6 +4,8 @@
   flex-direction: row;
   align-items: center;
   padding: 0 20px;
+  margin: 10px;
+  width: 90%;
 }
 
 /* Hamburger menu - hidden by default */
@@ -25,6 +27,7 @@
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
+  float: right;
 }
 
 .navigate ul li {
@@ -52,10 +55,9 @@
 }
 
 .actions img {
-  width: 32px;
-  height: 32px;
   border-radius: 6px;
   object-fit: cover;
+  width: 15%;
 }
 
 /* Responsive adjustments */
@@ -75,15 +77,25 @@
 
 @media screen and (max-width: 768px) {
   .opt-profile {
+    width: 100%;
     padding: 0 10px;
   }
 
+  /* Show hamburger menu */
+  .hamburger-menu {
+    display: block;
+    width: 10%;
+  }
+
+  /* Hide regular navigation */
   .navigate {
+    display: none;
     width: 70%;
   }
 
   .actions {
-    width: 30%;
+    width: 100%;
+    justify-content: flex-end;
   }
 
   .navigate ul li {
@@ -109,22 +121,6 @@
     right: 0;
     top: 0;
     z-index: 100;
-  }
-
-  /* Show hamburger menu */
-  .hamburger-menu {
-    display: block;
-    width: 10%;
-  }
-
-  /* Hide regular navigation */
-  .navigate {
-    display: none;
-  }
-
-  .actions {
-    width: 90%;
-    justify-content: flex-end;
   }
 
   .actions * {

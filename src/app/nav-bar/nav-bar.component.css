@@ -19,12 +19,43 @@
 }
 
 .options {
-  width:  85%;
-
+  width: 85%;
   display: flex;
   align-items: center;
 }
 
 app-options {
   width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .div-logo {
+    width: 15%;
+    height: 100%;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .div-logo {
+    width: 25%;
+    height: 100%;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .div-logo {
+    width: 65%;
+    height: 100%;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .div-logo {
+    width: 75%;
+    height: 100%;
+    display: flex;
+  }
 }

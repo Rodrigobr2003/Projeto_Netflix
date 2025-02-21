@@ -549,6 +549,7 @@
     width: 90%;
     height: 45px;
     font-size: 1em;
+    margin: auto;
   }
 
   .login-top-section button {
